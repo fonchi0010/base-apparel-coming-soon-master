@@ -14,21 +14,24 @@
 <body>
   <main class=
   "max-w-[375px] 
-   md:max-w-[740px] 
+   md:max-w-[740px] md:flex
    lg:max-w-[980px]
    border-black border-2
-   " 
-   
-   >
+   ">
     <div class=
     "h-[20px] w-[100px] ml-8 my-8">
       <img src="images/logo.svg" alt="logo">
     </div>
     <article>
-      <div class="max-w-[375px]">
+      <div class=
+      "max-w-[375px]
+       md:hidden
+      ">
         <img src="images/hero-mobile.jpg" alt="hero">
       </div>
-      <section class="mt-16">
+      <section class=
+      "pt-16 
+       bg-gradient-to-b from-[#ffffff] to-[#fff5f5]">
         <h1 class=
         "flex flex-col items-center 
         pb-9 text-4xl uppercase
@@ -44,15 +47,26 @@
           Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
         <div class=
-        "mx-8 pb-24 ">
+        "mx-8 pb-24 relative">
           <input class=
           "w-full indent-3 rounded-3xl py-2" 
           type="text" placeholder="Email Address"/>
           <input class=
-          "py-2 px-2 rounded-2xl" 
-          type="button" value="go">
+          "py-2 px-6 rounded-3xl absolute
+          bg-gradient-to-r from-[#f8bfbf] to-[#ee8c8c]
+          top-[2px] right-[1px]
+          " 
+          type="image" src="images/icon-arrow.svg" alt="">
         </div>  
         
+      </section>
+      <!-- imagen modo desktop -->
+      <section class=
+      "hidden
+       md:block">
+        <div>
+          <img src="images/hero-desktop.jpg" alt="hero-desktop">
+        </div>
       </section>
     </article>
   </main>
