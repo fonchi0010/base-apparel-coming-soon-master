@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import "tailwindcss";
 
 @layer base{
     input{
         border: 1px solid black;
     }
+}
+
+:root{
+    --font-josefin: "Josefin Sans", serif;
+}
+
+h1, span, p{
+    font-family: var(--font-josefin);
+}
+input::placeholder{
+    font-family: var(--font-josefin);
 }

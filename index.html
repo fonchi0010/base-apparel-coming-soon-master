@@ -22,7 +22,11 @@
     "md:flex md:flex-row">      
       <section class=
       "
-       bg-gradient-to-b from-[#ffffff] to-[#fff5f5]
+       bg-gradient-to-b from-[#ffffff] to-[hsl(0, 100%, 98%)]
+      md:bg-gradient-to-br 
+      from-[#ee8c8c] 
+      via-[#ffffff] 
+      to-[#f8bfbf]
        md:w-3/5
        ">
        
@@ -72,10 +76,11 @@
           type="text" placeholder="Email Address"/>
           <input class=
           "py-2 px-6 rounded-3xl absolute
-          bg-gradient-to-r from-[#f8bfbf] to-[#ee8c8c]
+          bg-[#ee8c8c] opacity-75 outline-none border-none
           top-[2px] right-[1px]
           lg:py-4 lg:px-10
-          hover:scale-110
+          hover:scale-110 hover:shadow-xl hover:shadow-gray-400
+          hover:bg-[#f8bfbf]
           " 
           type="image" src="images/icon-arrow.svg" alt="icon-arrow">
         </div>  
@@ -95,7 +100,8 @@
     </article>
   </main>
   <footer class=
-  "text-center pt-3">
+  "pt-3 text-left 
+  md:text-center">
     <p>Proyect Development by 
     <a
     class="text-red-200 text-2xl" 
